@@ -1,0 +1,51 @@
+{
+    "name": "@synbase.io/pi-core",
+    "version": "1.0.0",
+    "type": "module",
+    "license": "MIT",
+    "keywords": [
+        "pi-package",
+        "pi-coding-agent",
+        "coding-agent",
+        "synbase",
+        "harness"
+    ],
+    "files": [
+        "dist",
+        "index.js",
+        "skills",
+        "prompts",
+        "themes"
+    ],
+    "exports": {
+        ".": "./dist/index.js"
+    },
+    "pi": {
+        "extensions": [
+            "./index.js"
+        ],
+        "skills": [
+            "./skills"
+        ],
+        "prompts": [
+            "./prompts"
+        ],
+        "themes": [
+            "./themes"
+        ]
+    },
+    "dependencies": {
+        "open": "^11.0.4",
+        "radashi": "^12.9.5",
+        "zod": "^4.6.5"
+    },
+    "peerDependencies": {
+        "@earendil-works/pi-coding-agent": "^0.87.0",
+        "@earendil-works/pi-tui": "^0.87.0"
+    },
+    "scripts": {
+        "build": "tsup",
+        "prepack": "pnpm build",
+        "typecheck": "tsc --noEmit"
+    }
+}

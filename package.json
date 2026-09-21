@@ -1,0 +1,22 @@
+{
+    "name": "@synbase.io/pi",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "license": "MIT",
+    "scripts": {
+        "format": "biome format --write .",
+        "lint": "biome check .",
+        "typecheck": "pnpm -r --if-present typecheck"
+    },
+    "packageManager": "pnpm@12.5.1",
+    "engines": {
+        "node": ">=22.19.0"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.5.14",
+        "@types/node": "^26.6.2",
+        "tsup": "^8.5.1",
+        "typescript": "^6.0.3"
+    }
+}
