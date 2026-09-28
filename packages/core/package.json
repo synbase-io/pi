@@ -35,16 +35,16 @@
         ]
     },
     "dependencies": {
-        "open": "^11.0.4",
-        "radashi": "^12.9.5",
+        "radashi": "^12.9.6",
         "zod": "^4.6.5"
     },
     "peerDependencies": {
-        "@earendil-works/pi-coding-agent": "^0.87.0",
-        "@earendil-works/pi-tui": "^0.87.0"
+        "@earendil-works/pi-coding-agent": "^0.87.1",
+        "@earendil-works/pi-tui": "^0.87.1"
     },
     "scripts": {
         "build": "tsup",
+        "clean": "rimraf ./dist",
         "prepack": "pnpm build",
         "typecheck": "tsc --noEmit"
     }

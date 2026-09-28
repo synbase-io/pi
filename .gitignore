@@ -1,4 +1,6 @@
 .env
+.turbo
+
 dist/
 node_modules/
 
