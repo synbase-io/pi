@@ -10,7 +10,7 @@
         "lint": "biome check .",
         "clean": "turbo run clean",
         "typecheck": "turbo run typecheck",
-        "dev": "pi -ne -ns -np -nc --no-themes -e ./packages/**"
+        "dev": "JITI_TSCONFIG_PATHS=true pi -ne -ns -np -nc --no-themes -e ./packages/**/src/extension.ts --skill ./packages/**/skills --prompt-template ./packages/**/prompts"
     },
     "devEngines": {
         "packageManager": {
