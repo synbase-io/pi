@@ -5,7 +5,9 @@ import { list } from "radashi";
 export class Border implements Component {
     constructor(private readonly theme: Theme) {}
 
-    public invalidate(): void {}
+    public invalidate(): void {
+        return;
+    }
 
     public render(width: number): string[] {
         return [`${list(1, width, this.theme.fg("border", "─")).join("")}`];
