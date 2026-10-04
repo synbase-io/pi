@@ -5,3 +5,4 @@ Hello there! Welcome to my handcrafted extensions for `pi-coding-agent`. Why am 
 ## TODOs
 
 - Settings with numbers need there own input component so we can filter out non-number characters
+- Input settings should have the cursor at the end and not the front

@@ -1,13 +1,20 @@
 packages:
   - packages/*
+catalog:
+  radashi: ^12.9.6
+  zod: ^4.6.5
+  '@earendil-works/pi-coding-agent': ^1.0.2
+  '@earendil-works/pi-tui': ^1.0.2
 allowBuilds:
   '@google/genai': true
   esbuild: true
   protobufjs: true
 minimumReleaseAgeExclude:
-  - '@earendil-works/chord@0.87.0'
-  - '@earendil-works/pi-agent-core@0.87.0'
-  - '@earendil-works/pi-ai@0.87.0'
-  - '@earendil-works/pi-coding-agent@0.87.0'
-  - '@earendil-works/pi-telemetry@0.87.0'
-  - '@earendil-works/pi-tui@0.87.0'
+  - '@earendil-works/chord@0.87.0 || 1.0.2'
+  - '@earendil-works/pi-agent-core@0.87.0 || 1.0.2'
+  - '@earendil-works/pi-ai@0.87.0 || 1.0.2'
+  - '@earendil-works/pi-coding-agent@0.87.0 || 1.0.2'
+  - '@earendil-works/pi-telemetry@0.87.0 || 1.0.2'
+  - '@earendil-works/pi-tui@0.87.0 || 1.0.2'
+  - '@earendil-works/pi-codemode@1.0.2'
+  - '@earendil-works/pi-mcp@1.0.2'

@@ -35,12 +35,12 @@
         ]
     },
     "dependencies": {
-        "radashi": "^12.9.6",
-        "zod": "^4.6.5"
+        "radashi": "catalog:",
+        "zod": "catalog:"
     },
     "peerDependencies": {
-        "@earendil-works/pi-coding-agent": "^0.87.1",
-        "@earendil-works/pi-tui": "^0.87.1"
+        "@earendil-works/pi-coding-agent": "catalog:",
+        "@earendil-works/pi-tui": "catalog:"
     },
     "scripts": {
         "build": "tsup",
